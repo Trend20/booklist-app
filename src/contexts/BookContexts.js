@@ -1,7 +1,7 @@
 import { createContext, useState} from 'react';
-import uuid from 'uuid/v1';
+import {v1 as uuidv1 } from 'uuid';
 
-const BookContext = createContext();
+export const BookContext = createContext();
 
 const BookContextProvider = ({children}) =>{
   // define state
@@ -12,7 +12,7 @@ const BookContextProvider = ({children}) =>{
 
   // addBook method
   const addBook = (title, author) =>{
-    setBooks([...books, {title, author, id: uuid() }])
+    setBooks([...books, {title, author, id: uuidv1() }])
   }
 
    // removeBook method
