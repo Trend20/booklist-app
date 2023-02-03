@@ -7,7 +7,7 @@ const BookContextProvider = ({children}) =>{
   // define state
   const [books, setBooks] = useState([
     {title: "barking dog", author: 'mike owen', id: 1},
-    {title: "barking dog", author: 'mike owen', id: 1}
+    {title: "barking dog", author: 'mike owen', id: 2}
   ])
 
   // addBook method
